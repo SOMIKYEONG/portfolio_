@@ -1,0 +1,1079 @@
+@import url('common.css');
+
+body {
+    width: 100%;
+    background-color: #c7c7c7;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+.outer-scratch,
+.inner-scratch {
+    height: inherit;
+}
+
+.outer-scratch:after,
+.inner-scratch:after {
+    content: '';
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/scratch.png') repeat center center;
+    -webkit-animation: scratch 0.45s steps(1) infinite;
+    animation: scratch 0.45s steps(1) infinite;
+}
+
+.inner-scratch:after {
+    -webkit-animation: inner-scratch 2s infinite;
+    animation: inner-scratch 2s infinite;
+}
+
+#section1 {
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+
+#section1:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+    -webkit-animation: grain 0.5s steps(1) infinite;
+    animation: grain 0.5s steps(1) infinite;
+}
+
+
+.sti p {
+    background: #000;
+    padding: 3% 2%;
+    border-radius: 100%;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    text-align: center;
+    transform: rotate(15deg);
+    box-shadow: 10px 10px 5px gray;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#section1 p a {
+    font-size: 2em;
+    color: #fff;
+}
+
+.sec1 {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+
+.sec1 h2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 8em;
+}
+
+.sec1_2 {
+    width: 100%;
+}
+
+.sec1_2 p {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    border-bottom: 10px solid #000;
+    z-index: 999;
+}
+
+.sec1_2 img {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    z-index: 999;
+    animation: img 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img {
+    0% {
+        width: 100px;
+    }
+
+    90% {
+        width: 100px;
+    }
+
+    to {
+        width: 100px;
+        height: auto;
+        top: -50%;
+    }
+}
+
+
+#section3 {
+    width: 100%;
+    height: 500vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: #111111;
+}
+
+#section3::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    opacity: .11;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+    -webkit-animation: grain 0.5s steps(1) infinite;
+    animation: grain 0.5s steps(1) infinite;
+}
+
+.sec3Box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.sec3_1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sec3_1 img {
+    width: 100%;
+}
+
+.sec3_2 {
+    width: 20%;
+    height: auto;
+    padding: 150px 0;
+}
+
+.sec3_2 img {
+    width: 100%;
+}
+
+.sec3_3 {
+    width: 40%;
+    height: auto;
+    padding: 50px 0;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+.sec3_3 img {
+    width: 100%;
+}
+
+.sec3_4 {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+}
+
+.sec3_4 img {
+    width: 100%;
+}
+
+.sec3_5 {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+.sec3_5 img {
+    width: 100%;
+}
+
+.sec3_6 {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+}
+
+.sec3_6 img {
+    width: 100%;
+}
+
+#section4 {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    padding: 300px 0;
+}
+
+.sec4_1 h2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 8em;
+    padding-bottom: 100px;
+    animation: ani 1s infinite alternate;
+    transition: .5s;
+}
+
+
+@keyframes ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 50px);
+    }
+}
+
+.sec4_1 p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 999;
+    color: #000;
+    padding-bottom: 50px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec4_2 {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec4_2 p {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #000;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 999;
+}
+
+.sec4_2 p a {
+    color: #000;
+}
+
+/*====================================================================*/
+@media (min-width:769px) and (max-width:1100px) {
+    #section1 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    #section1:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0.4;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        -webkit-animation: grain 0.5s steps(1) infinite;
+        animation: grain 0.5s steps(1) infinite;
+    }
+
+    .sti p {
+        background: #000;
+        padding: 4% 2%;
+        border-radius: 100%;
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        text-align: center;
+        transform: rotate(15deg);
+        box-shadow: 10px 10px 5px gray;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #section1 p a {
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    .sec1 {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 999;
+    }
+
+    .sec1 h2 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 8em;
+    }
+
+    .sec1_2 {
+        width: 100%;
+        display: none;
+    }
+
+    .sec1_2 p {
+        width: 80%;
+        position: absolute;
+        right: 0;
+        border-bottom: 10px solid #000;
+        z-index: 999;
+    }
+
+    .sec1_2 img {
+        position: absolute;
+        bottom: -10%;
+        left: 2%;
+        z-index: 999;
+    }
+
+    #section3 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        background: #111111;
+    }
+
+    #section3::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        opacity: .11;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        -webkit-animation: grain 0.5s steps(1) infinite;
+        animation: grain 0.5s steps(1) infinite;
+    }
+
+    .sec3Box {
+        width: 90%;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    .sec3_1 {
+        width: 95%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .sec3_1 img {
+        width: 100%;
+    }
+
+    .sec3_2 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .sec3_2 img {
+        width: 100%;
+    }
+
+    .sec3_3 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px;
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+
+    .sec3_3 img {
+        width: 100%;
+    }
+
+    .sec3_4 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        right: 0%;
+        padding: 30px;
+    }
+
+    .sec3_4 img {
+        width: 100%;
+    }
+
+    .sec3_5 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        padding: 30px;
+    }
+
+    .sec3_5 img {
+        width: 100%;
+    }
+
+    .sec3_6 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        right: 0%;
+        padding: 30px;
+    }
+
+    .sec3_6 img {
+        width: 100%;
+    }
+
+    #section4 {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+        padding: 300px 0;
+    }
+
+    .sec4_1 h2 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 8em;
+        padding-bottom: 100px;
+        animation: ani 1s infinite alternate;
+        transition: .5s;
+    }
+
+
+    @keyframes ani {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(0, 50px);
+        }
+    }
+
+    .sec4_1 p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+        z-index: 999;
+        color: #000;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sec4_2 {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sec4_2 p {
+        width: 300px;
+        height: auto;
+        margin: 10px;
+        border: 2px solid #000;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 2em;
+        z-index: 999;
+    }
+
+    .sec4_2 p a {
+        color: #000;
+    }
+}
+
+
+/*====================================================================*/
+@media (max-width:768px) {
+
+    .outer-scratch:after,
+    .inner-scratch:after {
+        content: '';
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .1;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/scratch.png') repeat center center;
+        -webkit-animation: scratch 0.45s steps(1) infinite;
+        animation: scratch 0.45s steps(1) infinite;
+    }
+
+    #section1 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    #section1:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0.4;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        -webkit-animation: grain 0.5s steps(1) infinite;
+        animation: grain 0.5s steps(1) infinite;
+    }
+
+    .sti p {
+        background: #000;
+        padding: 4% 2%;
+        border-radius: 100%;
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        text-align: center;
+        transform: rotate(15deg);
+        box-shadow: 10px 10px 5px gray;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #section1 p a {
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    .sec1 {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 999;
+    }
+
+    .sec1 h2 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 6em;
+    }
+
+    .sec1_2 {
+        width: 100%;
+        display: none;
+    }
+
+    .sec1_2 p {
+        width: 80%;
+        position: absolute;
+        right: 0;
+        border-bottom: 10px solid #000;
+        z-index: 999;
+    }
+
+    .sec1_2 img {
+        position: absolute;
+        bottom: -10%;
+        left: 2%;
+        z-index: 999;
+    }
+
+    #section3 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        background: #111111;
+    }
+
+    #section3::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        opacity: .11;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        -webkit-animation: grain 0.5s steps(1) infinite;
+        animation: grain 0.5s steps(1) infinite;
+    }
+
+    .sec3Box {
+        width: 90%;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    .sec3_1 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .sec3_1 img {
+        width: 100%;
+    }
+
+    .sec3_2 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sec3_2 img {
+        width: 100%;
+    }
+
+    .sec3_3 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+
+    .sec3_3 img {
+        width: 100%;
+    }
+
+    .sec3_4 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+
+    .sec3_4 img {
+        width: 100%;
+    }
+
+    .sec3_5 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+
+    .sec3_5 img {
+        width: 100%;
+    }
+
+    .sec3_6 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+
+    .sec3_6 img {
+        width: 100%;
+    }
+
+    #section4 {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+        padding: 200px 0;
+    }
+
+    .sec4_1 h2 {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 6em;
+        padding-bottom: 100px;
+        animation: ani 1s infinite alternate;
+        transition: .5s;
+    }
+
+
+    @keyframes ani {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(0, 50px);
+        }
+    }
+
+    .sec4_1 p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+        z-index: 999;
+        color: #000;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sec4_2 {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sec4_2 p {
+        width: 300px;
+        height: auto;
+        margin: 10px;
+        border: 2px solid #000;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 2em;
+        z-index: 999;
+    }
+
+    .sec4_2 p a {
+        color: #000;
+    }
+}
+
+
+/*====================================================================*/
+@media (max-width:480px) {
+
+    .outer-scratch:after,
+    .inner-scratch:after {
+        content: '';
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .1;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/scratch.png') repeat center center;
+        -webkit-animation: scratch 0.45s steps(1) infinite;
+        animation: scratch 0.45s steps(1) infinite;
+    }
+
+    #section1 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    #section1:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0.4;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        -webkit-animation: grain 0.5s steps(1) infinite;
+        animation: grain 0.5s steps(1) infinite;
+    }
+
+    .sti p {
+        background: #000;
+        padding: 4% 2%;
+        border-radius: 100%;
+        position: absolute;
+        top: 1%;
+        right: 4%;
+        text-align: center;
+        transform: rotate(15deg);
+        box-shadow: 10px 10px 5px gray;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #section1 p a {
+        font-size: 1em;
+        color: #fff;
+    }
+
+    .sec1 {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 999;
+    }
+
+    .sec1 h2 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    .sec1_2 {
+        width: 100%;
+        display: none;
+    }
+
+    .sec1_2 p {
+        width: 80%;
+        position: absolute;
+        right: 0;
+        border-bottom: 10px solid #000;
+        z-index: 999;
+    }
+
+    .sec1_2 img {
+        position: absolute;
+        bottom: -10%;
+        left: 2%;
+        z-index: 999;
+    }
+
+    #section3 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        background: #111111;
+    }
+
+    #section3::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        opacity: .11;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
+        -webkit-animation: grain 0.5s steps(1) infinite;
+        animation: grain 0.5s steps(1) infinite;
+    }
+
+    .sec3Box {
+        width: 90%;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    .sec3_1 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .sec3_1 img {
+        width: 100%;
+    }
+
+    .sec3_2 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sec3_2 img {
+        width: 100%;
+    }
+
+    .sec3_3 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+
+    .sec3_3 img {
+        width: 100%;
+    }
+
+    .sec3_4 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+
+    .sec3_4 img {
+        width: 100%;
+    }
+
+    .sec3_5 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+
+    .sec3_5 img {
+        width: 100%;
+    }
+
+    .sec3_6 {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+
+    .sec3_6 img {
+        width: 100%;
+    }
+
+    #section4 {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+        padding: 100px 0;
+    }
+
+    .sec4_1 h2 {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 6em;
+        padding-bottom: 100px;
+        animation: ani 1s infinite alternate;
+        transition: .5s;
+    }
+
+
+    @keyframes ani {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(0, 50px);
+        }
+    }
+
+    .sec4_1 p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+        z-index: 999;
+        color: #000;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sec4_2 {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sec4_2 p {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+        border: 2px solid #000;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 1em;
+        z-index: 999;
+    }
+
+    .sec4_2 p a {
+        color: #000;
+    }
+}

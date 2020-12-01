@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');
+
+* {
+    font-family: 'Hi Melody', cursive;
+}
+
+.eng {
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.about {
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Yeon Sung', cursive;
+}
+
+html,
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
