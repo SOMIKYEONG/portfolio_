@@ -38,7 +38,7 @@ body {
     width: 100%;
     height: 90vh;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 5vh 0;
     position: relative;
 }
 
@@ -85,7 +85,7 @@ body {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    font-size: 8em;
+    font-size: 13vh;
 }
 
 .sec1_2 {
@@ -465,7 +465,7 @@ body {
     overflow: hidden;
     position: relative;
     background: #111111;
-    padding: 300px 0;
+    padding: 20vh 0;
 }
 
 .last4_1 h2 {
@@ -506,7 +506,7 @@ body {
 }
 
 .last4_2 {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -607,7 +607,7 @@ a.btn-layerClose {
         width: 100%;
         height: auto;
         margin: 0 auto;
-        padding-top: 10px;
+        padding: 5vh 0;
         position: relative;
     }
 
@@ -653,7 +653,7 @@ a.btn-layerClose {
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-size: 8em;
+        font-size: 13vh;
     }
 
     .sec1_2 {
@@ -1334,12 +1334,12 @@ a.btn-layerClose {
 
     #sectionlast {
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
         background: #111111;
-        padding: 300px 0;
+        padding: 20vh 0;
     }
 
     .last4_1 h2 {
@@ -1380,7 +1380,7 @@ a.btn-layerClose {
     }
 
     .last4_2 {
-        width: 50%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -1388,7 +1388,7 @@ a.btn-layerClose {
     }
 
     .last4_2 p {
-        width: 300px;
+        width: 50%;
         height: auto;
         margin: 10px;
         border: 2px solid #738c6f;
@@ -1429,7 +1429,7 @@ a.btn-layerClose {
         width: 100%;
         height: auto;
         margin: 0 auto;
-        padding-top: 10px;
+        padding: 5vh 0;
         position: relative;
     }
 
@@ -1451,7 +1451,7 @@ a.btn-layerClose {
         border-radius: 100%;
         position: absolute;
         top: 4%;
-        right: 10%;
+        right: 4%;
         text-align: center;
         transform: rotate(15deg);
         box-shadow: 10px 10px 5px gray;
@@ -1460,7 +1460,7 @@ a.btn-layerClose {
     }
 
     #section1 p a {
-        font-size: 1em;
+        font-size: 1.5em;
         color: #738c6f;
     }
 
@@ -1475,7 +1475,7 @@ a.btn-layerClose {
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-size: 4em;
+        font-size: 10vh;
     }
 
     .sec1_2 {
@@ -2159,12 +2159,12 @@ a.btn-layerClose {
 
     #sectionlast {
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
         background: #111111;
-        padding: 200px 0;
+        padding: 20vh 0;
     }
 
     .last4_1 h2 {
@@ -2205,15 +2205,15 @@ a.btn-layerClose {
     }
 
     .last4_2 {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        display: flex;
+        display: block;
         justify-content: space-between;
         align-items: center;
     }
 
     .last4_2 p {
-        width: 300px;
+        width: 100%;
         height: auto;
         margin: 10px;
         border: 2px solid #738c6f;
@@ -2255,7 +2255,7 @@ a.btn-layerClose {
         width: 100%;
         height: auto;
         margin: 0 auto;
-        padding-top: 10px;
+        padding: 5vh 0;
         position: relative;
     }
 
@@ -2273,11 +2273,11 @@ a.btn-layerClose {
 
     .sti p {
         background: #000;
-        padding: 4% 2%;
+        padding: 7% 4%;
         border-radius: 100%;
         position: absolute;
-        top: 4%;
-        right: 1%;
+        top: 1%;
+        right: 4%;
         text-align: center;
         transform: rotate(15deg);
         box-shadow: 10px 10px 5px gray;
@@ -2301,7 +2301,7 @@ a.btn-layerClose {
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-size: 3em;
+        font-size: 8vh;
     }
 
     .sec1_2 {
@@ -2986,21 +2986,21 @@ a.btn-layerClose {
 
     #sectionlast {
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
         background: #111111;
-        padding: 100px 0;
+        padding: 10vh 0;
     }
 
     .last4_1 h2 {
         width: 80%;
         margin: 0 auto;
         text-align: center;
-        font-size: 6em;
+        font-size: 5em;
         color: #738c6f;
-        padding-bottom: 100px;
+        padding-bottom: 10vh;
         animation: ani 1s infinite alternate;
         transition: .5s;
     }
@@ -3034,13 +3034,13 @@ a.btn-layerClose {
     .last4_2 {
         width: 80%;
         margin: 0 auto;
-        display: flex;
+        display: block;
         justify-content: space-between;
         align-items: center;
     }
 
     .last4_2 p {
-        width: 200px;
+        width: 100%;
         height: auto;
         margin: 10px;
         border: 2px solid #738c6f;
